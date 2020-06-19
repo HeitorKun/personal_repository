@@ -1,0 +1,3 @@
+(move_hero m1 m3)
+(move_hero m3 m4)
+(move_hero m4 m6)

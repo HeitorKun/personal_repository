@@ -1,0 +1,6 @@
+(move_hero m3 m1)
+(move_hero m1 m2)
+(pick_sword m2)
+(move_hero m2 m4)
+(slay_monster m4)
+(move_hero m4 m6)
