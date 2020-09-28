@@ -1,0 +1,67 @@
+Alunos: Heitor Feijó Kunrath, Hojin Ryu, Luiza Nunes
+
+ As técnicas utilizadas para execução dos testes foram particionamento e Valor limite
+-Casos de teste projetados com cada uma das técnicas
+
+
+-Código do driver de teste implementado (explorando testes parametrizados)
+
+Conta Mágica
+        a = new ContaMagica("Hojiin", "1123000"); 
+        b = new ContaMagica("Heitor", "321000"); 
+        a = new ContaMagica("Luiza", "20023320"); 
+
+        d= new ContaMagica("Matheus", "2055320"); 
+        e= new ContaMagica("Claudio", "55523320"); 
+        f= new ContaMagica("Rosa", "66623320"); 
+
+        a.deposito(20000);
+
+        b.deposito(50000);
+        b.deposito(100);
+
+        c.deposito(50000);
+        c.deposito(150000);
+        c.deposito(100000);
+
+        d.deposito(50000);
+        d.retirada(26000);
+
+        e.deposito(50000);
+        e.deposito(150000);
+        e.deposito(100000);
+        e.retirada(205000);
+
+
+        f.deposito(50000);
+        f.deposito(150000);
+        f.deposito(100000);
+        f.retirada(205000);
+        f.retirada(75000);
+
+
+
+
+INSS
+        assertEquals(1000, a.getSalarioBruto());
+        assertEquals(45,a.getINSS());
+        assertEquals(0, a.getIR());
+        assertEquals(955,a.getSalarioLiquido());
+
+        assertEquals(2088.335,b.getSalarioLiquido());
+        assertEquals(2501 * 012 , b.getIR());
+
+        assertEquals(171000, c.getSalarioLiquido());
+        assertEquals(5000, c.getINSS());
+
+
+
+-Código da classe implementada
+
+-Defeitos encontrados 
+
+Erros não foram encontrados.
+
+-Análise de cobertura do código a partir da primeira versão do driver de teste
+-Casos de teste adicionados
+-Análise de cobertura do código a partir da última versão do driver de teste
